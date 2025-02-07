@@ -45,8 +45,9 @@ Time Functions.
   	GetSystemTime()	                  Retrieves the current system date and time.
 	Sleep()	                          Suspends the execution of the current thread for a specified interval.
  
-Miscellaneous Functions:
-  MessageBox()	                    Displays a modal dialog box that contains a system icon, a set of buttons, and a brief application-specific message.
+Miscellaneous Functions.
+
+  	MessageBox()	                    Displays a modal dialog box that contains a system icon, a set of buttons, and a brief application-specific message.
 	GetLastError()	                  Retrieves the calling thread’s last-error code value.
 	LoadLibrary, GetProcAddress()	   Loads a dynamic-link library (DLL) into the calling process’s address space.
 
