@@ -21,9 +21,18 @@ int main() {
             &si,     // Startup Info
             &pi      // Process Information
         )) {
-        // Process created successfully
-        cout << "Process created successfully. PID: " << pi.dwProcessId << endl;
-        
+            //here some attributes info of that process
+            cout << "Process created successfully!" << endl;
+            cout << "Process ID (PID): " << pi.dwProcessId << endl;
+            cout << "Thread ID: " << pi.dwThreadId << endl;
+            cout << "Process Handle: " << pi.hProcess << endl;
+            cout << "Thread Handle: " << pi.hThread << endl;
+            //if i want to terminate my code after 5 second that time use it
+               Sleep(5000);
+            // Terminate the process
+            TerminateProcess(pi.hProcess, 0);
+            cout << "Process terminated." << endl;
+            //and if we want to terminate my notepad and proess in terminal type taskkill /IM notepad.exe /F
 
         // Close process and thread handles.
         CloseHandle(pi.hProcess);
