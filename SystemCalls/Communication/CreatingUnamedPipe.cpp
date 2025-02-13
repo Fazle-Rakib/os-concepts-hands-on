@@ -65,7 +65,7 @@ int main(){
     if(bReadfile== FALSE){
         cout<<"Rerad Failed failed  & Error NO "<<GetLastError()<<endl;
     }else{
-        cout<<"Read  Succesfully"<<endl;
+        cout<<"Read  Succesfully. Read Pipe -> "<<szBuffer<<endl;
     }
     CloseHandle(hWrite);
 }
