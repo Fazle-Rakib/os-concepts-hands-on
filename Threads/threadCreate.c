@@ -22,4 +22,5 @@ void *thread_fun(void *arg){
 		printf("%d\n",j);
 		sleep(1);
 	}
+	return NULL;
 }
